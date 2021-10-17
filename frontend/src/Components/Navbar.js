@@ -10,7 +10,7 @@ export default function Navbar() {
 	return (
 		<div className='navbar'>
 			<Link to='/' className='home-link'>
-				<div className='logo'>MHACKS</div>
+				<div className='logo'>MEDICORDS</div>
 			</Link>
 			<div className='nav-contents'>
 				<Link to='/' className='home-link'>

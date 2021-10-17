@@ -1,5 +1,6 @@
 import React from "react";
 import "../CSS/Contact.css";
+import { Link } from "react-router-dom";
 import ContactImg from "../Images/Contact.svg";
 
 function Contact() {
@@ -23,6 +24,9 @@ function Contact() {
 						<span>the new health culture.</span>
 					</div>
 				</div>
+				<Link to='/consult' className='get-started-contact'>
+					<div className='home-button'>CONTACT</div>
+				</Link>
 			</div>
 		</div>
 	);

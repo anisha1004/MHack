@@ -32,7 +32,7 @@ function Contribute() {
 							Schedule medical waste collection drives, organise awareness and
 							wellness camps
 						</div>
-						<Link to='/contribute' className='contribute-started'>
+						<Link to='/organise' className='contribute-started'>
 							<div className='contribute-button'>CONTRIBUTE</div>
 						</Link>
 					</div>

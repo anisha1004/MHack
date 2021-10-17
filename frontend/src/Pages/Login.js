@@ -22,7 +22,7 @@ export default function Login() {
 	const [loginUser, { loading }] = useMutation(LOGIN_USER, {
 		update(_, { data: { login: userData } }) {
 			context.login(userData);
-			history.push("/");
+			history.push("/details");
 		},
 		onError(err) {
 			setErrors(err.graphQLErrors[0].extensions.exception.errors);

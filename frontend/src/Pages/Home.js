@@ -13,7 +13,7 @@ function Home() {
 				<div className='left'>
 					<div className='navbar-home'>
 						<Link to='/' className='home-link-home'>
-							<div className='logo'>MHACKS</div>
+							<div className='logo'>MEDICORDS</div>
 						</Link>
 						<div className='nav-contents-home'>
 							<Link to='/' className='home-link'>
@@ -22,7 +22,7 @@ function Home() {
 							<Link to='/services' className='home-link'>
 								<div className='nav-btn'>SERVICES</div>
 							</Link>
-							<Link to='/supportus' className='home-link'>
+							<Link to='/organise' className='home-link'>
 								<div className='nav-btn'>SUPPORT US</div>
 							</Link>
 							<Link to='/contact' className='home-link'>
@@ -44,7 +44,7 @@ function Home() {
 								<br />
 								Single step, Hassle free sharing of your records.
 							</div>
-							<Link to='/details' className='get-started'>
+							<Link to='/login' className='get-started'>
 								<div className='home-button'>GET STARTED</div>
 							</Link>
 						</div>

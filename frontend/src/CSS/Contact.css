@@ -31,3 +31,10 @@
 .contact-content {
 	padding-left: 100px;
 }
+
+.get-started-contact {
+	text-decoration: none;
+	display: flex;
+	width: 70%;
+	padding: 0px 100px;
+}
