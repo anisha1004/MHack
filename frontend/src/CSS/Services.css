@@ -1,0 +1,77 @@
+.service {
+	width: 100%;
+	height: 100vh;
+}
+.service-head {
+	height: 30%;
+	width: 100%;
+	font-weight: 700;
+	font-size: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.camps {
+	display: flex;
+	width: 100%;
+	height: 70%;
+	justify-content: space-evenly;
+}
+.camp-item {
+	/* width: 100%;
+	display: flex;
+	flex-direction: column; */
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	border-radius: 10px;
+	padding: 20px 30px;
+	box-shadow: 0px 4px 4px 4px rgba(154, 201, 207, 0.425);
+	height: 70%;
+	width: 18%;
+}
+.vector {
+	padding: 20px;
+	height: 35%;
+}
+.camp-text {
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
+}
+.organise-head-top {
+	height: 30%;
+	width: 100%;
+	font-weight: 700;
+	font-size: 44px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.organise-content {
+	font-size: 15px;
+	font-weight: normal;
+	display: flex;
+	justify-content: center;
+}
+.organise-content-heading {
+	font-size: 15px;
+	font-weight: normal;
+	display: flex;
+	justify-content: center;
+}
+
+.organise-heading {
+	display: flex;
+	flex-direction: column;
+}
+.organise-head {
+	display: flex;
+	flex-direction: column;
+	padding: 40px 0px 20px 0px;
+}

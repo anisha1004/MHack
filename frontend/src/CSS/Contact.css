@@ -1,0 +1,33 @@
+.contact {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+}
+.contact-img {
+	height: 100%;
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact-text {
+	height: 100%;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.head {
+	display: flex;
+	flex-direction: column;
+	font-weight: 700;
+	font-size: 44px;
+}
+.text {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 0px;
+}
+.contact-content {
+	padding-left: 100px;
+}
