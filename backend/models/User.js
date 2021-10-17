@@ -17,9 +17,6 @@ const UserSchema = new mongoose.Schema(
 			min: 3,
 			required: true,
 		},
-		avatar: {
-			type: String,
-		},
 		token: {
 			type: String,
 		},

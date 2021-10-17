@@ -30,22 +30,21 @@ module.exports = gql`
 		password: String!
 		confirmPassword: String!
 		email: String!
-		avatar: String!
 	}
 	type Query {
-		getMedicalRecords(username: String!): MedicalRecord!
+		getMedicalRecords: MedicalRecord!
 	}
 	type Mutation {
 		register(registerInput: RegisterInput): User!
 		login(username: String!, password: String!): User!
 		createMedicalRecord(
-			name: String!
-			address: String!
-			phone: String!
-			bloodgroup: String!
-			weight: String!
-			height: String!
-			medicalhistory: DescriptionInput
+			name: String
+			address: String
+			phone: String
+			bloodgroup: String
+			weight: String
+			height: String
+			medicalhistory: [DescriptionInput]
 		): MedicalRecord!
 	}
 `;

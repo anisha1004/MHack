@@ -4,8 +4,10 @@ const checkAuth = require("../../utils/checkAuth");
 
 module.exports = {
 	Query: {
-		async getMedicalRecords(_, { username }) {
+		async getMedicalRecords(_, __, context) {
 			try {
+				const user = checkAuth(context);
+				const username = user.username;
 				const medicalRecord = MedicalRecord.findOne({ username });
 				if (medicalRecord) return medicalRecord;
 				else throw new Error("Record Not found");
@@ -18,15 +20,7 @@ module.exports = {
 	Mutation: {
 		async createMedicalRecord(
 			_,
-			{
-				name,
-				address,
-				phone,
-				height,
-				weight,
-				bloodgroup,
-				medicalhistory: { desc },
-			},
+			{ name, address, phone, height, weight, bloodgroup, medicalhistory },
 			context
 		) {
 			const user = checkAuth(context);
@@ -47,7 +41,7 @@ module.exports = {
 					height,
 					weight,
 					bloodgroup,
-					medicalhistory: { desc },
+					medicalhistory,
 				});
 				const medicalRecord = await newMedicalRecord.save();
 				return medicalRecord;
@@ -62,9 +56,9 @@ module.exports = {
 						height,
 						weight,
 						bloodgroup,
-						medicalhistory: { desc },
+						medicalhistory,
 					},
-					{ useFindAndModify: false }
+					{ useFindAndModify: false, new: true }
 				);
 				return newRecord;
 			}

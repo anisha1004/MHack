@@ -50,7 +50,7 @@ module.exports = {
 		},
 		async register(
 			_,
-			{ registerInput: { username, email, password, confirmPassword, avatar } },
+			{ registerInput: { username, email, password, confirmPassword } },
 			context,
 			info
 		) {
@@ -88,7 +88,7 @@ module.exports = {
 				email,
 				username,
 				password,
-				avatar,
+
 				createdAt: new Date().toISOString(),
 			});
 

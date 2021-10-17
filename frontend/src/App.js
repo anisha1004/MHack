@@ -10,6 +10,7 @@ import Services from "./Pages/Services";
 import Organise from "./Pages/Organise";
 import Contact from "./Pages/Contact";
 import Consult from "./Pages/Consult";
+import Details from "./Pages/Details";
 
 function App() {
 	return (
@@ -24,6 +25,7 @@ function App() {
 					<Route exact path='/organise' component={Organise} />
 					<Route exact path='/contact' component={Contact} />
 					<Route exact path='/consult' component={Consult} />
+					<Route exact path='/details' component={Details} />
 				</Router>
 			</AuthProvider>
 		</div>

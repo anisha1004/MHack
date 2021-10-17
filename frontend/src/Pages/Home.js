@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import HomeImg from "../Images/HomeImg.svg";
 import "../CSS/Home.css";
 import Contribute from "./Contribute";
+import Services from "./Services";
+import Contact from "./Contact";
 
 function Home() {
 	return (
@@ -42,7 +44,7 @@ function Home() {
 								<br />
 								Single step, Hassle free sharing of your records.
 							</div>
-							<Link to='/login' className='get-started'>
+							<Link to='/details' className='get-started'>
 								<div className='home-button'>GET STARTED</div>
 							</Link>
 						</div>
@@ -56,6 +58,8 @@ function Home() {
 				</div>
 			</div>
 			<Contribute />
+			<Contact />
+			<Services />
 		</>
 	);
 }
